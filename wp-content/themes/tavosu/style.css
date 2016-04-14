@@ -8,12 +8,17 @@
     src: url('css/fonts/Cabin-Bold.ttf');
     font-weight: bold;
 }
-*{-webkit-font-smoothing: subpixel-antialiased;}
+*{
+    text-rendering: optimizeLegibility;
+}
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #222222;
+}
+.wrapper{
+    padding-bottom: 27px;
 }
 .page-wrapper{
     width:1009px;
@@ -188,4 +193,72 @@ body{
 }
 .post-pin-it:hover{
     background-image: url("img/pin-dark.png");
+}
+/*** contact form ***/
+.ccf-form-wrapper{
+    margin: 35px auto 42px auto!important;
+}
+form.ccf-form.ccf-theme-default{
+    color: #222222;
+    max-width: 656px;
+}
+.ccf-form-wrapper .field label.main-label{
+    margin-bottom: 3px!important;
+}
+form.ccf-form.ccf-theme-default label{
+    font-weight: 300 !important;
+}
+form.ccf-form.ccf-theme-default label{
+    font-size: 13px;
+    color: #222222 !important;
+}
+form.ccf-form.ccf-theme-default .sub-label.help-block.text-muted{
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+form.ccf-form.ccf-theme-default .form-group{
+     margin-bottom: 23px;
+ }
+form.ccf-form.ccf-theme-default .form-group:nth-child(2),
+form.ccf-form.ccf-theme-default .form-group:nth-child(3){
+    width: 50%;
+    padding-right: 10px;
+ }
+form.ccf-form.ccf-theme-default .left{
+    width: 50%;
+}
+form.ccf-form.ccf-theme-default .form-group:first-child {
+    margin-bottom: 19px !important;
+}
+.ccf-form.ccf-theme-default input,
+.ccf-form.ccf-theme-default textarea{
+    height: 27px;
+    border-radius: 2px;
+    border-color: #d7d7d7;
+    padding-left: 8px;
+}
+.ccf-form.ccf-theme-default input[type=submit]{
+    height: 35px;
+    width: 85px;
+    background-color: #222222;
+    color: #ffffff;
+    margin-left: -1px;
+    margin-top: -2px;
+}
+.ccf-form.ccf-theme-default textarea{
+    height: 126px;
+    resize:vertical ;
+}
+*:focus {
+    outline: none;
+}
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.required{
+    color: #000000 !important;
 }

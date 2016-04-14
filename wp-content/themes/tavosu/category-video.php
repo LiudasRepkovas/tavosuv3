@@ -1,6 +1,6 @@
 <?php
 get_header();
-
+echo "<div class='wrapper'>";
 while(have_posts()):?>
 
     <?php the_post(); ?>
@@ -9,6 +9,7 @@ while(have_posts()):?>
     </div>
 
 <?php endwhile;
+echo "</div>";
 get_footer();
 
 
