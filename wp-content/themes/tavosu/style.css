@@ -245,6 +245,7 @@ form.ccf-form.ccf-theme-default .form-group:first-child {
     border-color: #d7d7d7;
     padding-left: 8px;
 }
+
 .ccf-form.ccf-theme-default input[type=submit]{
     height: 35px;
     width: 85px;
@@ -253,6 +254,9 @@ form.ccf-form.ccf-theme-default .form-group:first-child {
     margin-left: -1px;
     margin-top: -2px;
     border: none;
+}
+.ccf-form-wrapper .error.email-error{
+    float: right!important;
 }
 .ccf-form.ccf-theme-default input[type=submit]:hover{
     opacity: 0.9;

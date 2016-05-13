@@ -9,7 +9,7 @@ $(document).ready(function(){
     $('.ccf-submit-button').click(function(){
         $('input').removeClass('red');
         $('textarea').removeClass('red');
-        var form_errors = $('.error.required-error');
+        var form_errors = $('.error');
         if(form_errors.length > 0){
             $.each(form_errors, function(){
                 $(this).parent().find('input').addClass('red');
