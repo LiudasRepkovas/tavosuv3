@@ -232,6 +232,12 @@ form.ccf-form.ccf-theme-default .left{
 form.ccf-form.ccf-theme-default .form-group:first-child {
     margin-bottom: 19px !important;
 }
+
+.ccf-form.ccf-theme-default input.red,
+.ccf-form.ccf-theme-default textarea.red{
+    border: 1px solid red;
+}
+
 .ccf-form.ccf-theme-default input,
 .ccf-form.ccf-theme-default textarea{
     height: 27px;
@@ -246,6 +252,13 @@ form.ccf-form.ccf-theme-default .form-group:first-child {
     color: #ffffff;
     margin-left: -1px;
     margin-top: -2px;
+    border: none;
+}
+.ccf-form.ccf-theme-default input[type=submit]:hover{
+    opacity: 0.9;
+}
+.ccf-form.ccf-theme-default input[type=submit]:focus{
+    border-radius: 0;
 }
 .ccf-form.ccf-theme-default textarea{
     height: 126px;
@@ -254,11 +267,18 @@ form.ccf-form.ccf-theme-default .form-group:first-child {
 *:focus {
     outline: none;
 }
+.form-control{
+    box-shadow: none;
+}
 .form-control:focus {
     border-color: inherit;
     -webkit-box-shadow: none;
     box-shadow: none;
+
 }
 .required{
     color: #000000 !important;
+}
+textarea:focus, input:focus, button:focus{
+    outline: none !important;
 }
