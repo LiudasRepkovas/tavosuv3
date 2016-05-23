@@ -5,7 +5,8 @@
     <title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
     <meta name="description" content="<?php bloginfo ( 'description' );?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<!--    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>-->
+    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/fonts/roboto.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
     <?php wp_head(); ?>
@@ -14,11 +15,16 @@
 <div class="page-wrapper clearfix">
 
     <div class="sidebar-navigation">
-        <a href="<?php home_url()?>">
+        <a class="logo-wrap" href="<?php echo home_url()?>">
             <img class="logo" src="<?php header_image()?>">
         </a>
-        <div class="description">
-            <?php bloginfo ( 'description' );?>
+        <div class="description-wrapper">
+            <div class="description">
+                <?php bloginfo ( 'description' );?>
+            </div>
+        </div>
+        <div class="menu-icon">
+            <span></span>
         </div>
         <?php wp_nav_menu(array('menu' => 'Main menu'));?>
 
