@@ -17,10 +17,15 @@ function tavosu_widgets_init() {
     ) );
 }
 
+function remove_empty_p($content){
+    $content = force_balance_tags($content);
+    return preg_replace('#<p>\s*+(<br\s*/*>)?\s*</p>#i', '', $content);
+}
+
 function remove_admin_login_header() {
     remove_action('wp_head', '_admin_bar_bump_cb');
 }
 
 add_action( 'widgets_init', 'tavosu_widgets_init' );
 add_action('get_header', 'remove_admin_login_header');
-
+add_filter('the_content', 'remove_empty_p', 20, 1);

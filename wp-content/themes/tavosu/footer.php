@@ -1,3 +1,13 @@
+<footer class="clearfix row">
+    <div class="social">
+        <?php wp_nav_menu(array('menu' => 'Social menu'));?>
+    </div>
+    <div class="copyright">
+        All work by Tadas Vosylius<br>
+        © 2016
+    </div>
+
+</footer>
 </div>
 
 </div>
