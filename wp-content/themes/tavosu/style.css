@@ -1,4 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300&subset=latin,latin-ext);
+
+/*html.touch *:hover {*/
+    /*pointer-events: none !important;*/
+/*}*/
+
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;

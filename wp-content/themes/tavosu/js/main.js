@@ -21,10 +21,16 @@ $(document).ready(function(){
         $(this).toggleClass('open');
         $('.sidebar-navigation .mobile-menu ul.menu').slideToggle();
     });
+   $(".post-pin-it").click(function(){
+       PinUtils.pinAny();
+   });
 
-    $('a').on('click touchend', function(e) {
-        var el = $(this);
-        window.location = el.attr('href');
+    $('a').not('nav.navbar a').on("tap", function () {
+        var link = $(this).attr('href');
+        if (typeof link !== 'undefined') {
+            window.location = link;
+        }
     });
+    g
 
 });

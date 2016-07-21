@@ -19,7 +19,7 @@ while (have_posts()): the_post();?>
         <?php edit_post_link(); ?>
     </div>
     <div class="hr row">
-        <a title="Pin it!" class="post-pin-it" target="_blank" href="https://pinterest.com/pin/create/bookmarklet/?media=<?php echo $first?>&url=<?php the_permalink()?>&is_video=false&description=<?php the_tags()?>"></a>
+        <a title="Pin it!" class="post-pin-it" target="_blank" ></a>
     </div>
 
 <?php
