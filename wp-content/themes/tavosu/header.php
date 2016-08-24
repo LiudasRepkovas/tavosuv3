@@ -14,7 +14,7 @@
 
     <div class="sidebar-navigation">
         <a class="logo-wrap" href="<?php echo home_url()?>">
-            <img class="logo" src="<?php header_image()?>">
+            <img class="logo" src="<?php header_image()?>" nopin = "nopin">
         </a>
         <div class="menu-icon">
             <span></span>

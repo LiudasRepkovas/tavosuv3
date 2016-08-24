@@ -3,16 +3,35 @@ get_header();
 while (have_posts()): the_post();?>
     <div class="row post single-work">
         <div class="attachments">
-            <?php $attachments = new Attachments( 'attachments' ); ?>
-            <?php if( $attachments->exist() ) : ?>
-                <?php $first = false; ?>
-                <?php while( $attachment = $attachments->get() ) : ?>
-                    <?php if(!$first){
-                        $first = $attachments->url('full');
-                    }?>
-                    <?php echo $attachments->image('full'); ?>
-                <?php endwhile; ?>
-            <?php endif; ?>
+            <?php
+            $entries = get_post_meta( get_the_ID(), '_prefix_repeatable-group', true );
+
+            foreach ( (array) $entries as $key => $entry ) {
+
+                $img = $title = $desc = $caption = '';
+
+                if ( isset( $entry['attachment_type'] ) )
+                    $attachment_type = esc_html( $entry['attachment_type'] );
+
+                if ( isset( $entry['embed'] ) )
+                    $embed = str_replace("https://", "http://", $entry['embed'] );
+
+                if ( isset( $entry['image'] ) ) {
+                    $img = esc_html( $entry['image'] );
+                }
+
+                if($attachment_type == "embed"){
+                    echo "<div class='iframe-wrap'>";
+                    echo wp_oembed_get($embed);
+                    echo "</div>";
+                } else {
+                    echo ("<img src='" . $img . "'/>");
+                }
+
+            }
+            ?>
+
+
         </div>
         <h4><?php the_title(); ?></h4>
         <?php the_content(); ?>

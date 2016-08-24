@@ -10,7 +10,7 @@
             $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
             ;?>
             <a href="<?php echo get_post_permalink()?>"  class="col-lg-4 work-block-wrap">
-                <img class="block-image" src="<?php echo $feat_image ?>">
+                <img class="block-image" src="<?php echo $feat_image ?>" nopin = "nopin">
                 <div class="title-wrap">
                     <span><?php the_title()?></span>
                 </div>
