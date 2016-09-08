@@ -4,6 +4,7 @@
 $(document).ready(function(){
     // Target your .container, .wrapper, .post, etc.
     $(".content.container").fitVids();
+    $(".attachments").fitVids();
     $(".instagram-media").css('max-width', '100%');
 
     $('.ccf-submit-button').click(function(){
@@ -31,6 +32,5 @@ $(document).ready(function(){
             window.location = link;
         }
     });
-    g
 
 });

@@ -24,7 +24,7 @@ while (have_posts()): the_post();?>
                     echo "<div class='iframe-wrap'>";
                     echo wp_oembed_get($embed);
                     echo "</div>";
-                } else {
+                } else if($attachment_type == "image") {
                     echo ("<img src='" . $img . "'/>");
                 }
 
