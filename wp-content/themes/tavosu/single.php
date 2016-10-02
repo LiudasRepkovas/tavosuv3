@@ -1,7 +1,10 @@
 <?php
 get_header();
+$isWorkPage = true;
 while (have_posts()): the_post();?>
     <div class="row post single-work">
+        <h4><?php the_title(); ?></h4>
+        <?php the_content(); ?>
         <div class="attachments">
             <?php
             $entries = get_post_meta( get_the_ID(), '_prefix_repeatable-group', true );
@@ -14,7 +17,7 @@ while (have_posts()): the_post();?>
                     $attachment_type = esc_html( $entry['attachment_type'] );
 
                 if ( isset( $entry['embed'] ) )
-                    $embed = str_replace("https://", "http://", $entry['embed'] );
+                    $embed = str_replace("https://", "https://", $entry['embed'] );
 
                 if ( isset( $entry['image'] ) ) {
                     $img = esc_html( $entry['image'] );
@@ -33,9 +36,7 @@ while (have_posts()): the_post();?>
 
 
         </div>
-        <h4><?php the_title(); ?></h4>
-        <?php the_content(); ?>
-        <?php edit_post_link(); ?>
+<!--        --><?php //edit_post_link(); ?>
     </div>
     <div class="hr row">
         <a title="Pin it!" class="post-pin-it" target="_blank" ></a>

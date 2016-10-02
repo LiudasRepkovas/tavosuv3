@@ -4,6 +4,8 @@
 $(document).ready(function(){
     // Target your .container, .wrapper, .post, etc.
     $(".content.container").fitVids();
+    $(".content.iframe-wrap").fitVids({ customSelector: "iframe[src^='https://facebook.com']"});
+
     $(".attachments").fitVids();
     $(".instagram-media").css('max-width', '100%');
 
@@ -32,5 +34,18 @@ $(document).ready(function(){
             window.location = link;
         }
     });
-
+    addExtraBlankSpaceAtTheBottom();
 });
+
+function addExtraBlankSpaceAtTheBottom(){
+    var page_margin_top = parseInt($(".page-wrapper.clearfix").css("margin-top"));
+    var blocks_element = $(".row.work-blocks");
+    var diff = window.innerHeight - $(blocks_element).outerHeight() - $("footer").outerHeight() - page_margin_top;
+    $(window).resize(function(){
+        if($(".row.post.single-work") != null && diff > 0 && window.innerWidth > 976){
+            $("footer.row").css({"padding-bottom":diff +"px"});
+        } else {
+            $("footer.row").css({"padding-bottom": 0 });
+        }
+    });
+}

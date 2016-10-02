@@ -1,4 +1,4 @@
-<footer class="clearfix row">
+<footer class="clearfix row <?php if($isWorkPage) echo "extra-padding" ?>">
     <div class="social">
         <?php wp_nav_menu(array('menu' => 'Social menu'));?>
     </div>

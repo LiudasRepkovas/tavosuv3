@@ -25,7 +25,7 @@ a, a:hover, a:active, a:visited{
 }
 .page-wrapper{
     width:941px;
-    margin: 141px auto 0 auto;
+    margin: 91px auto 0 auto;
     position: relative;
 }
 .sidebar-navigation{
@@ -36,17 +36,17 @@ a, a:hover, a:active, a:visited{
 }
 .sidebar-navigation .logo{
     display: block;
-    margin-top: -80px;
-    margin-bottom: 52px;
-    width: 78px;
-    height: 78px;
+    margin-top: -3px;
+    margin-bottom: 40px;
+    width: 69px;
+    height: 69px;
 }
 
 .sidebar-navigation .menu li{
     line-height: 13px;
     font-size: 13px;
     list-style: none;
-    padding: 8px 2px;
+    padding: 8px 0 8px 5px;
 }
 
 .sidebar-navigation #menu-main-menu li a{
@@ -96,21 +96,26 @@ a, a:hover, a:active, a:visited{
     margin-left: -5px;
 }
 
+.content .attachments{
+    padding-top: 8px;
+}
+
 .content.container .row.single-work > .attachments > .iframe-wrap{
-    margin-bottom: 11px;
+    padding-bottom: 17px;
 }
 .content .row.single-work img{
-    margin-bottom: 11px;
+    margin-bottom: 17px;
     width: 100%;
     height: auto;
 }
 .content .row.single-work .attachments{
-    margin-bottom: 27px;
+    padding-top: 8px;
 }
 .content .row.single-work h4{
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 21px;
+    margin-top: 23px;
 }
 
 .content .row.video p{
@@ -195,17 +200,17 @@ a, a:hover, a:active, a:visited{
 }
 .hr{
     position: relative;
-    border-top: 1px dotted #545454;
-    margin: 29px -15px 42px -15px;
+    /*border-top: 2px solid #ebebeb; */
+    margin: 29px -15px 96px -15px;
     height: 0;
 }
 .post-pin-it{
-    background-image: url("img/pin-dark.png");
+    background-image: url("img/pin-dark-long.png");
     position: absolute;
     right: 0;
-    top: -32px;
+    top: -16px;
     height: 16px;
-    width: 12px;
+    width: 50px;
     background-size: contain;
     cursor: pointer;
 }
@@ -413,7 +418,7 @@ footer .copyright{
     }
 
     .menu-icon {
-        margin-top: 24px;
+        margin-top: 22px;
         display: inline-block;
         float: right;
         height: 22px;
@@ -434,6 +439,7 @@ footer .copyright{
     .menu-icon span:before{
         top: -9px;
     }
+
 
 
     .sidebar-navigation {
