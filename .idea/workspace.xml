@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a89d3c15-c1c9-4792-a998-bc04ae10ed1e" name="Default" comment="Save">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/tavosu/img/pin-dark-long.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/cake_config_setting_v0_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/plugins/wp-facebook-oembed.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/tavosu/img/pin.png" afterPath="$PROJECT_DIR$/wp-content/themes/tavosu/img/pin.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/tavosu/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/tavosu/footer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/tavosu/js/main.js" afterPath="$PROJECT_DIR$/wp-content/themes/tavosu/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/tavosu/single.php" afterPath="$PROJECT_DIR$/wp-content/themes/tavosu/single.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/tavosu/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/tavosu/style.css" />
     </list>
     <list id="d0d7ceaf-9ada-4495-aa89-093685127cb6" name="New changelist" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -91,7 +84,7 @@
           <file leaf-file-name="single.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/tavosu/single.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.042659976" vertical-offset="0" max-vertical-offset="901">
+                <state vertical-scroll-proportion="0.063079774" vertical-offset="0" max-vertical-offset="901">
                   <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
                   <folding />
                 </state>
@@ -154,8 +147,8 @@
           <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/tavosu/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.95679796" vertical-offset="46" max-vertical-offset="935">
-                  <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+                <state vertical-scroll-proportion="0.67863894" vertical-offset="491" max-vertical-offset="1020">
+                  <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
                   <folding>
                     <element signature="e#0#43#0" expanded="false" />
                   </folding>
@@ -446,7 +439,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07900433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3582251" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15692641" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -876,7 +869,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/tavosu/single.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.042659976" vertical-offset="0" max-vertical-offset="901">
+        <state vertical-scroll-proportion="0.063079774" vertical-offset="0" max-vertical-offset="901">
           <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
           <folding />
         </state>
@@ -892,8 +885,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/tavosu/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.95679796" vertical-offset="46" max-vertical-offset="935">
-          <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.67863894" vertical-offset="491" max-vertical-offset="1020">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
           <folding>
             <element signature="e#0#43#0" expanded="false" />
           </folding>
