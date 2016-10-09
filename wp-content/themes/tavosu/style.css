@@ -421,7 +421,7 @@ footer .copyright{
     }
 
     .menu-icon {
-        margin-top: 16px;
+        margin-top: 23px;
         display: inline-block;
         float: right;
         height: 18px;
@@ -566,6 +566,10 @@ footer .copyright{
         width: 51px;
         margin-top: 0;
         margin-bottom: 44px;
+    }
+
+    .menu-icon {
+        margin-top: 16px;
     }
 
 }
