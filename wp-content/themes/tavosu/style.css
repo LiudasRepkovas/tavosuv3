@@ -107,7 +107,7 @@ a, a:hover, a:active, a:visited{
     padding-bottom: 17px;
 }
 .content .row.single-work img{
-    margin-bottom: 17px;
+    margin-bottom: 23px;
     width: 100%;
     height: auto;
 }
@@ -319,19 +319,19 @@ textarea:focus, input:focus, button:focus{
 
 .menu-icon{
     display: none;
-    height: 22px;
-    width: 27px;
+    height: 18px;
+    width: 24px;
     cursor: pointer;
     position: relative;
-    margin-top: 26px;
+    margin-top: 16px;
 }
 .menu-icon span:before,
 .menu-icon span:after,
 .menu-icon span{
     position: absolute;
     display: block;
-    height: 4px;
-    width: 27px;
+    height: 2px;
+    width: 24px;
     top: 8px;
     background-color: #222222;
     content: '';
@@ -345,10 +345,10 @@ textarea:focus, input:focus, button:focus{
     transition: .2s ease-in-out;
 }
 .menu-icon span:after{
-    top: 9px;
+    top: 8px;
 }
 .menu-icon span:before{
-    top: -9px;
+    top: -8px;
 }
 
 .menu-icon.open span:after,
@@ -421,26 +421,26 @@ footer .copyright{
     }
 
     .menu-icon {
-        margin-top: 22px;
+        margin-top: 16px;
         display: inline-block;
         float: right;
-        height: 22px;
-        width: 27px;
+        height: 18px;
+        width: 24px;
         margin-bottom: 46px;
     }
 
     .menu-icon span:before,
     .menu-icon span:after,
     .menu-icon span{
-        height: 4px;
-        width: 27px;
+        height: 2px;
+        width: 24px;
         top: 8px;
     }
     .menu-icon span:after{
-        top: 9px;
+        top: 6px;
     }
     .menu-icon span:before{
-        top: -9px;
+        top: -6px;
     }
 
 
@@ -559,6 +559,13 @@ footer .copyright{
 
     .content .work-blocks{
         margin: 0 auto 10px auto;
+    }
+
+    .sidebar-navigation .logo {
+        height: 51px;
+        width: 51px;
+        margin-top: 0;
+        margin-bottom: 44px;
     }
 
 }

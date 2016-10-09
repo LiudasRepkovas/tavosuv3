@@ -46,10 +46,10 @@ function addExtraBlankSpaceAtTheBottom(){
     var diff = window.innerHeight - $(blocks_element).outerHeight() - $("footer").outerHeight() - page_margin_top;
 
 
-        if($(".row.post.single-work") && diff > 0 && window.innerWidth > 976){
+        if($(".row.post.single-work").length && diff > 0 && window.innerWidth > 976){
             $("footer.row").css({"padding-bottom":diff +"px"});
         } else {
-            $("footer.row").css({"padding-bottom": 0 });
+            $("footer.row").css({"padding-bottom": "42px" });
         }
 
 }
