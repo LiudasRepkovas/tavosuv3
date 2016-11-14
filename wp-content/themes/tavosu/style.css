@@ -27,7 +27,7 @@ a, a:hover, a:active, a:visited{
     padding-top: 19px;
 }
 .page-wrapper{
-    width:941px;
+    width:1102px;
     margin: 64px auto 0 auto;
     position: relative;
 }
@@ -89,7 +89,7 @@ a, a:hover, a:active, a:visited{
     padding-left: 2px;
 }
 .content{
-    width: 729px;
+    width: 890px;
     float: right;
 }
 .logo-wrap{
@@ -128,7 +128,7 @@ a, a:hover, a:active, a:visited{
     font-size: 13px;
     line-height: 23px;
     margin-bottom: 23px;
-    max-width: 686px;
+    max-width: 800px;
 }
 
 .content .post{
@@ -150,18 +150,20 @@ a, a:hover, a:active, a:visited{
 }
 .content .work-blocks{
     position: relative;
-    right: -5px;
+    right: -11px;
     margin: 0 -15px 32px -15px;
 }
 .work-block-wrap{
     position: relative;
-    height: 178px;
-    width: 233px;
-    margin-bottom: 10px;
+    height: 217px;
+    width: 285px;
+    margin-bottom: 12px;
     padding: 0;
-    margin-left: 5px;
+    margin-left: 0;
     float: left;
-    margin-right: 5px;
+    margin-right: 12px;
+}.work-block-wrap:nth-of-type(3n){
+    margin-right: 0;
 }
 .work-block-wrap:hover,
 .work-block-wrap:focus,
@@ -204,7 +206,7 @@ a, a:hover, a:active, a:visited{
 .hr{
     position: relative;
     /*border-top: 2px solid #ebebeb; */
-    margin: 29px -15px 96px -15px;
+    margin: 29px -15px 76px -15px;
     height: 0;
 }
 .post-pin-it{

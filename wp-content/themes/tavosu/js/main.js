@@ -47,7 +47,7 @@ function addExtraBlankSpaceAtTheBottom(){
 
 
         if($(".row.post.single-work").length && diff > 0 && window.innerWidth > 976){
-            $("footer.row").css({"padding-bottom":diff +"px"});
+            $("footer.row").css({"padding-bottom":10+diff +"px"});
         } else {
             $("footer.row").css({"padding-bottom": "42px" });
         }
