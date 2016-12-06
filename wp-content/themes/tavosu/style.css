@@ -162,7 +162,8 @@ a, a:hover, a:active, a:visited{
     margin-left: 0;
     float: left;
     margin-right: 12px;
-}.work-block-wrap:nth-of-type(3n){
+}
+.work-block-wrap:nth-of-type(3n){
     margin-right: 0;
 }
 .work-block-wrap:hover,
@@ -391,6 +392,10 @@ footer .copyright{
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 975px) {
+
+    .work-block-wrap:nth-of-type(3n){
+    margin-right: 10px;
+}
 
     .mobile-menu{
         display: block;
