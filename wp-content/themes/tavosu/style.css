@@ -102,6 +102,12 @@ a, a:hover, a:active, a:visited{
 .content .attachments{
     padding-top: 8px;
 }
+.content .attachments .image-text{
+    font-size: 13px;
+    line-height: 23px;
+    margin-bottom: 12px;
+    display: block;
+}
 
 .content.container .row.single-work > .attachments > .iframe-wrap{
     padding-bottom: 17px;
@@ -112,7 +118,7 @@ a, a:hover, a:active, a:visited{
     height: auto;
 }
 .content .row.single-work .attachments{
-    padding-top: 8px;
+    padding-top: 18px;
 }
 .content .row.single-work h4{
     font-size: 15px;
@@ -391,7 +397,7 @@ footer .copyright{
 }
 
 /* Small devices (tablets, 768px and up) */
-@media (max-width: 975px) {
+@media (max-width: 1124px) {
 
     .work-block-wrap:nth-of-type(3n){
     margin-right: 10px;

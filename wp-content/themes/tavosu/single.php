@@ -23,12 +23,20 @@ while (have_posts()): the_post();?>
                     $img = esc_html( $entry['image'] );
                 }
 
+                if ( isset( $entry['image_text'] ) ) {
+                    $image_text = esc_html( $entry['image_text'] );
+                }
+
+
                 if($attachment_type == "embed"){
                     echo "<div class='iframe-wrap'>";
                     echo wp_oembed_get($embed);
                     echo "</div>";
                 } else if($attachment_type == "image") {
-                    echo ("<img src='" . $img . "'/>");
+                    echo ("<div class='image'>");
+                        echo ("<span class='image-text'>" . $image_text . "</span>");
+                        echo ("<img src='" . $img . "'/>");
+                    echo ("</div>");
                 }
 
             }

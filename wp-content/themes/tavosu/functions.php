@@ -105,6 +105,17 @@ function register_cmb_fields() {
             'data-conditional-value' => 'image',
         ),
     ) );
+    
+    $cmb->add_group_field( $attachment_group, array(
+        'name' => 'Image text',
+        'id'   => 'image_text',
+        'type' => 'text',
+        'attributes' => array(
+            'required'               => true, // Will be required only if visible.
+            'data-conditional-id'    => json_encode( array( $attachment_group, 'attachment_type' ) ),
+            'data-conditional-value' => 'image',
+        ),
+    ) );
 }
 
 
