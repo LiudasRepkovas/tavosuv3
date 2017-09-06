@@ -11,6 +11,8 @@
 </head>
 <body>
 <div class="page-wrapper clearfix">
+    <button id="scrollToTop" title="Go to top">Top</button>
+
 
     <div class="sidebar-navigation">
         <a class="logo-wrap" href="<?php echo home_url()?>">

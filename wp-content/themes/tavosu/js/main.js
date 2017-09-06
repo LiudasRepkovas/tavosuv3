@@ -24,9 +24,14 @@ $(document).ready(function(){
         $(this).toggleClass('open');
         $('.sidebar-navigation .mobile-menu ul.menu').slideToggle();
     });
-   $(".post-pin-it").click(function(){
-       PinUtils.pinAny();
-   });
+
+   
+//    $(".pin-it-button").click(function(){
+//        let path = $(this).parent().find('img')[0].src;
+//        PinUtils.pinOne({
+//            media:path
+//        });
+//    });
 
     $('a').not('nav.navbar a').on("tap", function () {
         var link = $(this).attr('href');
@@ -37,6 +42,23 @@ $(document).ready(function(){
     addExtraBlankSpaceAtTheBottom();
     $(window).resize(function(){
         addExtraBlankSpaceAtTheBottom();
+    });
+
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("scrollToTop").style.display = "block";
+        } else {
+            document.getElementById("scrollToTop").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    $('#scrollToTop').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 50);
+        return false;
     });
 });
 

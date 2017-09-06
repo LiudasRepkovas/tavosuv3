@@ -34,7 +34,9 @@ while (have_posts()): the_post();?>
                     echo "</div>";
                 } else if($attachment_type == "image") {
                     echo ("<div class='image'>");
-                        echo ("<span class='image-text'>" . $image_text . "</span>");
+                        if( isset($image_text)){
+                            echo ("<span class='image-text'>" . $image_text . "</span>");
+                        }  
                         echo ("<img src='" . $img . "'/>");
                     echo ("</div>");
                 }
@@ -47,7 +49,7 @@ while (have_posts()): the_post();?>
 <!--        --><?php //edit_post_link(); ?>
     </div>
     <div class="hr row">
-        <a title="Pin it!" class="post-pin-it" target="_blank" ></a>
+        <!--<a title="Pin it!" class="post-pin-it" target="_blank" ></a>-->
     </div>
 
 <?php

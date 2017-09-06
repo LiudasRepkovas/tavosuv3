@@ -111,7 +111,7 @@ function register_cmb_fields() {
         'id'   => 'image_text',
         'type' => 'text',
         'attributes' => array(
-            'required'               => true, // Will be required only if visible.
+            'required'               => false, // Will be required only if visible.
             'data-conditional-id'    => json_encode( array( $attachment_group, 'attachment_type' ) ),
             'data-conditional-value' => 'image',
         ),

@@ -9,6 +9,28 @@ body{
     -webkit-font-smoothing: antialiased !important;
 }
 
+
+
+#scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 31px;
+    right: 31px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #bcbbbb;
+    color: white;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#scrollToTop:hover {
+  background-color: #555;
+}
+
 ul{
     padding-left: 0;
 }
@@ -102,11 +124,23 @@ a, a:hover, a:active, a:visited{
 .content .attachments{
     padding-top: 8px;
 }
+
+
+.content .attachments .image{
+    position: relative;
+}
+
 .content .attachments .image-text{
     font-size: 13px;
     line-height: 23px;
     margin-bottom: 12px;
+    margin-top: 21px;
     display: block;
+}
+
+
+.content .attachments .image:first-of-type .image-text{
+    margin-top: 0;
 }
 
 .content.container .row.single-work > .attachments > .iframe-wrap{
@@ -121,7 +155,7 @@ a, a:hover, a:active, a:visited{
     padding-top: 18px;
 }
 .content .row.single-work h4{
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 21px;
     margin-top: 23px;
