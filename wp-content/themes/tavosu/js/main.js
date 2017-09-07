@@ -57,7 +57,7 @@ $(document).ready(function(){
 
     // When the user clicks on the button, scroll to the top of the document
     $('#scrollToTop').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 50);
+        $("html, body").animate({ scrollTop: 0 }, 150);
         return false;
     });
 });
@@ -69,9 +69,9 @@ function addExtraBlankSpaceAtTheBottom(){
 
 
         if($(".row.post.single-work").length && diff > 0 && window.innerWidth > 976){
-            $("footer.row").css({"padding-bottom":10+diff +"px"});
+            $("footer.row").css({"padding-top":10+diff +"px"});
         } else {
-            $("footer.row").css({"padding-bottom": "42px" });
+            $("footer.row").css({"padding-top": "42px" });
         }
 
 }

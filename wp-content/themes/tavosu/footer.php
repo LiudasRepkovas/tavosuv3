@@ -1,10 +1,10 @@
+</div>
 <footer class="clearfix row <?php if($isWorkPage) echo "extra-padding" ?>">
     <div class="social">
         <?php wp_nav_menu(array('menu' => 'Social menu'));?>
     </div>
     <div class="copyright">
-        All work by Tadas Vosylius<br>
-        © 2016
+        All work by Tadas Vosylius © 2016
     </div>
 
 </footer>

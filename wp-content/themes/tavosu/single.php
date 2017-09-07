@@ -11,7 +11,8 @@ while (have_posts()): the_post();?>
 
             foreach ( (array) $entries as $key => $entry ) {
 
-                $img = $title = $desc = $caption = '';
+
+                $img = $image_text = $title = $desc = $caption = '';
 
                 if ( isset( $entry['attachment_type'] ) )
                     $attachment_type = esc_html( $entry['attachment_type'] );
@@ -34,7 +35,7 @@ while (have_posts()): the_post();?>
                     echo "</div>";
                 } else if($attachment_type == "image") {
                     echo ("<div class='image'>");
-                        if( isset($image_text)){
+                        if( isset($image_text)  && $image_text != ''){
                             echo ("<span class='image-text'>" . $image_text . "</span>");
                         }  
                         echo ("<img src='" . $img . "'/>");
