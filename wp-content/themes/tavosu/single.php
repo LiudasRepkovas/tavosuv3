@@ -3,11 +3,11 @@ get_header();
 $isWorkPage = true;
 while (have_posts()): the_post();?>
     <div class="row post single-work">
-        <h4><?php the_title(); ?></h4>
+        <!--<h4><?php the_title(); ?></h4>-->
         <?php the_content(); ?>
         <div class="attachments">
             <?php
-            $entries = get_post_meta( get_the_ID(), '_prefix_repeatable-group', true );
+            $entries = array_reverse ( get_post_meta( get_the_ID(), '_prefix_repeatable-group', true )  );
 
             foreach ( (array) $entries as $key => $entry ) {
 

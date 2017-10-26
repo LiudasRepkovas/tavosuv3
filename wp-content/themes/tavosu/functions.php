@@ -116,6 +116,45 @@ function register_cmb_fields() {
             'data-conditional-value' => 'image',
         ),
     ) );
+
+// questions
+    // $cmb1 = new_cmb2_box( array(
+    //     'id'            => $prefix . 'metabox1',
+    //     'title'         => 'FAQ',
+    //     'object_types'  => array( 'page' ), // Post type.
+        
+    // ) );
+
+    // $attachment_group1 = $cmb1->add_field( array(
+    //     'id'          => $prefix . 'repeatable-group1',
+    //     'type'        => 'group',
+    //     'description' => 'Add frequantly asked questions to a page',
+    //     'options'     => array(
+    //         'group_title'   => 'Entry {#}', // Since version 1.1.4, {#} gets replaced by row number.
+    //         'add_button'    => 'Add Another Entry',
+    //         'remove_button' => 'Remove Entry',
+    //         'sortable'      => true, // Beta.
+    //     ),
+    // ) );
+
+    // $cmb1->add_group_field( $attachment_group1, array(
+    //     'name'    => 'Question',
+    //     'id'      => 'faq_question',
+    //     'type'    => 'text',
+    //     'attributes' => array(
+    //         'required'               => true, // Will be required only if visible.
+    //     )
+    // ) );
+
+    
+    // $cmb1->add_group_field( $attachment_group1, array(
+    //     'name'    => 'Answer',
+    //     'id'      => 'faq_answer',
+    //     'type'    => 'text',
+    //     'attributes' => array(
+    //         'required'               => true, // Will be required only if visible.
+    //     )
+    // ) );
 }
 
 
