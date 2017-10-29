@@ -1,6 +1,7 @@
 <?php
 add_theme_support( 'custom-header' );
 add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 310, 312, 1 );
 register_nav_menus(
     array(
         'main_menu' => 'Main menu',
