@@ -3,7 +3,7 @@ get_header();
 $isWorkPage = true;
 while (have_posts()): the_post();?>
     <div class="row post single-work">
-        <!--<h4><?php the_title(); ?></h4>-->
+        <h4><?php the_title(); ?></h4>
         <?php the_content(); ?>
         <div class="attachments">
             <?php
@@ -50,6 +50,10 @@ while (have_posts()): the_post();?>
 <!--        --><?php //edit_post_link(); ?>
     </div>
     <div class="hr row">
+        <?php
+            $entries = get_post_meta( get_the_ID(), '_prefix_post_additional_info_field', true );
+            echo "<span class='post_info_cmb_string'>" . $entries . "</span>"
+        ?>
         <!--<a title="Pin it!" class="post-pin-it" target="_blank" ></a>-->
     </div>
 

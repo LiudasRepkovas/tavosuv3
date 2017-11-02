@@ -2,11 +2,17 @@
 get_header();
 while (have_posts()):?>
     <div class="row post page contact">
-        <?php
-        the_post();
-        the_content();
-        ?>
+        <div class="contact-col1">
+            <?php the_post_thumbnail() ?>
+        </div>
+        <div class="contact-col2">
+            <?php the_post();?> 
+            <?php the_content();?>
+        </div>
             <?php
+            if ( function_exists( 'ccf_output_form' ) ) {
+                ccf_output_form( '310' );
+            }
             $entries = array_reverse ( get_post_meta( get_the_ID(), '_prefix_repeatable-group1', true )  );
             if(!empty($entries)){
                 echo "<div class='faq'>";
