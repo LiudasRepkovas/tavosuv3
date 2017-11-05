@@ -15,7 +15,7 @@ body{
     display: inline-block;
     width: calc(40% - 48px);
     vertical-align: top;
-    margin-right: 48px;
+    margin-right: 75px;
 }
 
 .contact-col1 img{
@@ -112,7 +112,7 @@ a, a:hover, a:active, a:visited{
 .sidebar-navigation .logo{
     display: block;
     width: 136px;
-    height: 37px;
+    height: auto;
 }
 
 .sidebar-navigation .menu li{
@@ -133,13 +133,13 @@ a, a:hover, a:active, a:visited{
 
 #menu-main-menu-1 li a:hover,
 #menu-main-menu li a:hover{
-    color: #333;
+    color: #ea461d;
 }
 
 
 #menu-main-menu-1 li.current-menu-item a,
 #menu-main-menu li.current-menu-item a{
-    color: #333;
+    color: #ea461d;
 }
 
 .sidebar-navigation ul.menu{
@@ -228,18 +228,18 @@ a, a:hover, a:active, a:visited{
     margin: -6px 0 0 0;
 }
 .content .row.single-work img{
-    margin-bottom: 24px;
+    margin-bottom: 23px;
     width: 100%;
     height: auto;
 }
 .content .row.single-work .attachments{
-    padding-top: 60px;
+    padding-top: 23px;
 }
 .content .row.single-work h4{
     font-size: 24px;
     font-weight: 700;
     margin: 0 auto 21px auto;
-    letter-spacing: 5px;
+    letter-spacing: 2.8px;
     text-align: center
 }
 
@@ -248,7 +248,7 @@ a, a:hover, a:active, a:visited{
 }
 .content .post p{
     font-size: 14px;
-    line-height: 32px;
+    line-height: 30px;
     margin-bottom: 23px;
     font-weight: 400;
     letter-spacing: 1.3px;
@@ -258,7 +258,7 @@ a, a:hover, a:active, a:visited{
 .content .post.row.single-work p{
     text-align: center;
     max-width: 800px;
-    margin: 0 auto 23px auto;
+    margin: 0 auto 55px auto;
 }
 
 .content .post.process{
@@ -272,7 +272,7 @@ a, a:hover, a:active, a:visited{
     font-size: 15px;
 }
 .content .post a{
-    color: #63c6ae;
+    color: #ea461d;
 }
 .content .work-blocks{
     position: relative;
@@ -357,12 +357,13 @@ a, a:hover, a:active, a:visited{
 .form-control{
     padding-top: 3px !important;
     padding-bottom: 3px !important;
+    height: 38px;
 }
 /*** contact form ***/
 .ccf-form-wrapper{
     font-family: 'Montserrat', sans-serif;
     font-weight: normal !important;
-    margin: 35px auto 61px auto!important;
+    margin: 50px auto 61px auto!important;
 }
 form.ccf-form.ccf-theme-default{
     color: #222222;
@@ -402,7 +403,7 @@ form.ccf-form.ccf-theme-default .sub-label.help-block.text-muted{
     margin-bottom: 0;
 }
 form.ccf-form.ccf-theme-default .form-group{
-    margin-bottom: 23px;
+    margin-bottom: 32px;
 }
 form.ccf-form.ccf-theme-default .form-group:nth-child(2),
 form.ccf-form.ccf-theme-default .form-group:nth-child(3){
@@ -413,7 +414,7 @@ form.ccf-form.ccf-theme-default .left{
     width: 50%;
 }
 form.ccf-form.ccf-theme-default .form-group:first-child {
-    margin-bottom: 19px !important;
+    margin-bottom: 28px !important;
 }
 
 .ccf-form.ccf-theme-default input.red,
@@ -469,14 +470,6 @@ form.ccf-form.ccf-theme-default .form-group:first-child {
 }
 textarea:focus, input:focus, button:focus{
     outline: none !important;
-}
-
-.faq{
-    margin-bottom: 85px;
-}
-.faq p.question{
-    margin-bottom: 0;
-    font-style: italic;
 }
 
 .menu-icon{
@@ -540,7 +533,7 @@ footer .social{
 
 
 footer .social ul li a:hover path{
-    fill: #333;
+    fill: #ea461d;
 }
 footer .social ul li{
     display: inline-block;

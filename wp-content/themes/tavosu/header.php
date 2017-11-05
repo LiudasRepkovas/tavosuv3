@@ -19,8 +19,17 @@
 
     <div class="sidebar-navigation">
         <a class="logo-wrap" href="<?php echo home_url()?>">
-            <span>TAVOSU</span>
-            <!--<img class="logo" src="<?php header_image()?>" nopin = "nopin">-->
+        <?php 
+        
+        if(has_header_image()){
+            echo '<img class="logo" src=\''. get_header_image() . '\' nopin = "nopin">';
+                        // echo '<span>TAVOSU</span>';
+
+        } else {
+            echo '<span>TAVOSU</span>';
+        }
+            
+        ?>
         </a>
         <div class="menu-icon">
             <span></span>
